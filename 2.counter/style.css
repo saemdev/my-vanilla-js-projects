@@ -1,0 +1,51 @@
+body{
+    margin:0;
+    padding:0;
+    font-family: 'Roboto',sans-serif;
+}
+.container{
+    height: 80vh;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+
+}
+.container .content-container h2{
+    text-transform: uppercase;
+    font-size: 50px;
+    margin:0;
+    color:cadetblue
+}
+.container .content-container p {
+    font-size: 100px;
+    margin:0;
+    color:cadetblue
+}
+.btn-container .btn{
+    border:2px solid rgb(69, 65, 65);
+    background: white;
+    border-radius:5px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin:0 5px;
+    font-weight:bold;
+    padding:10px;
+}
+
+/* device responsive */
+@media screen and (max-width:425px){
+    .container .content-container h2{
+        font-size: 20px;
+
+    }
+    .container .content-container p {
+        font-size: 50px;
+    }
+    .btn-container .btn{
+        letter-spacing:2px;
+        padding:5px;
+        font-size: 8px;
+    }
+}
