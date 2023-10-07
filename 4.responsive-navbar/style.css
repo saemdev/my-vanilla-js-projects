@@ -1,0 +1,125 @@
+/* font style */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+       
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto';
+}
+.nav-toggle{
+    background: transparent;
+    color:#49A6E9;
+    border:none;
+    font-size: 25px;
+    transition-duration: .5s;
+}
+.nav-toggle:hover{
+    cursor: pointer;
+    transform: rotate(90deg);
+    color:rgb(12, 31, 12);
+    transition-duration: .5s;
+}
+.nav-header{ 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:0 1rem;
+}
+.menus{
+    height:0;
+    overflow:hidden;
+    transition-duration: .5s;
+}
+.menus li a{
+    text-decoration: none;
+    text-transform: capitalize;
+    letter-spacing: .1rem;
+    display: block;
+    color:gray;
+    transition-duration: .5s;
+    padding:.5rem;
+}
+
+.menus li a:hover{
+    padding-left:2rem;
+    transition-duration: .5s;
+    color:#49A6E9;
+    background-color: #8abcdf;
+}
+
+.social-links{
+    display: none;
+}
+ nav{
+   box-shadow:0 5px 15px rgba(0, 0, 0, 0.1);
+   padding:.6rem 0;
+}
+.show-links{
+    height: 8.5rem;
+    transition-duration: .5s;
+}
+/* media response */
+
+@media screen and (min-width:800px){
+   
+    .holder{
+        max-width:1170px;
+        margin:0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding:.5rem;
+    }
+    .logo{
+        cursor: pointer;
+        height:40px;
+    }
+    .nav-header{
+        
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .nav-toggle{
+        background: transparent;
+        color:#49A6E9;
+        border:none;
+        font-size: 20px;
+        display: none;
+    }
+    ul{
+        list-style-type: none;
+    }
+    .menus{
+        display: flex;
+        gap:15px;
+        height: auto;
+    }
+    .menus li a{
+        text-decoration: none;
+        text-transform: capitalize;
+        letter-spacing: .1rem;
+        font-size: 14px;
+        color:gray;
+    }
+    .menus li a:hover{
+        padding-left:.5rem;
+        color:#49A6E9;
+        background:transparent;
+    }
+    .social-links{
+        display: flex;
+        gap:15px;
+    }
+    .social-links a{
+        font-size: 14px;
+        color:#49A6E9;
+    }
+    .social-links a:hover{
+        color: #8abcdf;
+    }
+}
