@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+.sidebar-toggle{
+  position:fixed;
+  top:1rem;
+  right:2rem;
+}
+.sidebar-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:1rem;
+}
+.sidebar{
+     background-color: aliceblue;
+     position: fixed;
+     left:0;
+     top:0;
+     height: 100%;
+     display: grid;
+     grid-template-rows: auto 1fr auto;
+     width:0;
+     overflow: hidden;
+     box-shadow:0 0 15px rgba(0, 0, 0, 0.1);
+     transition-duration: .5s;
+     transform: translate(0);
+
+}
+.show-sidebar{
+    width:30%;
+    transform: translate(0);
+}
+/* menu items */
+.menus{
+    margin:10px 0;
+}
+.menus li a{
+    text-transform: capitalize;
+    color:hsl(210, 22%, 49%);
+    display: block;
+    padding:1rem;
+    font-size: 1.5rem;
+    transition-duration: .5s;
+}
+.menus li a:hover{
+    background: hsl(205, 86%, 81%);
+    color:hsl(205, 78%, 60%);
+    padding-left:1.5rem;
+    transition-duration:.5s ;
+}
+
+/* social media */
+
+.social-links{
+    display: flex;
+    gap:2rem;
+    align-items: center;
+    justify-content: center;
+    padding:3rem 0;
+}
+.social-links li a{
+    font-size: 1.5rem;
+    color:#49A6E9;
+}
+.social-links li a:hover{
+    font-size: 1.5rem;
+    color:#82c5f4;
+}
+
+/* sidebar toggle button */
+
+.sidebar-toggle{
+    border:none;
+    font-size: 35px;
+    background: transparent;
+    color:#49A6E9;
+    cursor: pointer;
+    transition-duration: .3s;
+}
+.sidebar-toggle:hover{
+    color:#1195f3;
+    transition-duration: .3s;
+}
+/* sidebar close button */
+
+.close-btn{
+    border:none;
+    font-size: 25px;
+    background-color: transparent;
+    color:rgb(232, 70, 70);
+    cursor: pointer;
+    padding:10px;
+    transition-duration: .3s;
+}
+.close-btn:hover{
+    color: rgb(195, 8, 8);
+    transition-duration: .3s;
+}
+
+/* media responsive */
+
+@media screen and (max-width:768px){
+    .sidebar{
+        width:40%;
+    }
+}
